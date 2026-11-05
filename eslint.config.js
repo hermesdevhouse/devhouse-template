@@ -7,7 +7,14 @@ import globals from 'globals';
 
 export default defineConfig(
   {
-    ignores: ['dist/', 'coverage/', 'reports/', 'test-results/', 'playwright-report/', '.wrangler/'],
+    ignores: [
+      'dist/',
+      'coverage/',
+      'reports/',
+      'test-results/',
+      'playwright-report/',
+      '.wrangler/',
+    ],
   },
   js.configs.recommended,
   tseslint.configs.strictTypeChecked,

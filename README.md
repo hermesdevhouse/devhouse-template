@@ -4,13 +4,13 @@ Dev House project template: a Hono API and a React PWA on one Cloudflare Worker 
 TypeScript strict, ESLint and Prettier (D22), Vitest (D10) and an OpenAPI contract (O1,
 contract-first).
 
-| Path | What |
-|---|---|
-| `src/api/` | Hono app, served under `/api/*` (Worker runs first for `/api/*`) |
-| `src/web/`, `index.html`, `public/` | React PWA client (static assets, SPA fallback) |
-| `openapi/openapi.json` | API contract. `test/api.test.ts` checks routes ↔ spec; CI `spec-diff` checks it against the base |
-| `e2e/` | Playwright + axe, run by CI against the branch preview only |
-| `tools/` | `card_guard.py`, `injection_tripwire.py`, `text_hygiene.py` (run locally and in CI) |
+| Path                                | What                                                                                             |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `src/api/`                          | Hono app, served under `/api/*` (Worker runs first for `/api/*`)                                 |
+| `src/web/`, `index.html`, `public/` | React PWA client (static assets, SPA fallback)                                                   |
+| `openapi/openapi.json`              | API contract. `test/api.test.ts` checks routes ↔ spec; CI `spec-diff` checks it against the base |
+| `e2e/`                              | Playwright + axe, run by CI against the branch preview only                                      |
+| `tools/`                            | `card_guard.py`, `injection_tripwire.py`, `text_hygiene.py` (run locally and in CI)              |
 
 ## After creating a repo from this template
 

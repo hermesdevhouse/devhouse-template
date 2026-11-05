@@ -9,7 +9,10 @@ afterEach(() => {
 });
 
 it('shows the API status once /api/health answers', async () => {
-  vi.stubGlobal('fetch', vi.fn(() => Promise.resolve(new Response('{}', { status: 200 }))));
+  vi.stubGlobal(
+    'fetch',
+    vi.fn(() => Promise.resolve(new Response('{}', { status: 200 }))),
+  );
   render(<App />);
   expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Dev House template');
   expect((await screen.findByText('API: ok')).getAttribute('role')).toBe('status');

@@ -7,8 +7,8 @@
   "preview_urls": true,
   "assets": {
     "not_found_handling": "single-page-application",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": ["/api/*"],
   },
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
   // D25: previews bind only to non-production D1/R2 with fake data. Add bindings per project.
 }
